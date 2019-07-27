@@ -1,16 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import 'antd/dist/antd.css';
 import './index.css';
-import Login from './Componets/Login/Login';
 import * as serviceWorker from './serviceWorker';
 import {Route, BrowserRouter as Router} from 'react-router-dom';
-
 const routing =(
     <Router>
-        <div>
-                <Route exact path='/' component={App}/>
-                <Route exact path='/Formulario' component={Login}/>                
+        <div >
+                <Route exact path='/' component={App}/>            
         </div>
         
     </Router>
